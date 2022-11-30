@@ -51,7 +51,6 @@ function signUp(email, nickname, password) {
 //登入
 let user = '';
 let data = [];
-let num = 0;
 const page1 = document.querySelector('.wrap');
 const page2 = document.querySelector('.wrap2');
 const userList = document.querySelector('.name');
@@ -116,7 +115,6 @@ function background(data) {
 
 //刪除清單
 function deleteList(e) {
-    e.preventDefault();
     let todoId = e.target.closest('li').dataset.id;
     deleteTodo(todoId);
 }
@@ -129,14 +127,14 @@ function deleteTodo(todoId) {
 const list = document.querySelector('.list');
 
 list.addEventListener('click', function (e) {
+    e.preventDefault();
     let listId = e.target.closest('li').dataset.id;
     if (e.target.nodeName == 'UL') {
         return
     } else if (e.target.getAttribute('class') == 'delete') {
         deleteList(e);
-
     } else if (e.target.getAttribute('class') == 'pen') {
-        e.preventDefault();
+
         const checkbox = e.target.parentElement.firstChild.nextSibling.children[0];
         const edit = e.target.parentElement.firstChild.nextSibling.children[1];
         let upDateStr;
@@ -152,8 +150,10 @@ list.addEventListener('click', function (e) {
             checkbox.checked = false;
             checkbox.style.zIndex = '-1'; // 讓 input[type=text] 可以被選到，進行編輯
         }
-
-    } else {
+    } else if (e.target.disabled === false) {
+        return
+    }
+    else {
         toggleTodo(listId);
     }
 })
@@ -174,21 +174,25 @@ function readerData(data) {
             data[i].checked = '';
         }
     }
+    let num = 0;
     data.forEach(function (item) {
         str += `<li data-id=${item.id}>
         <label class="checkbox"   >
         <input type="checkbox"  ${item.checked}/>
         <span >
-        <input type="text" id="word" value="${item.content}" disabled/>
+        <input type="text" class="word" value="${item.content}" disabled/>
        </span>
         </label>
         <a href="#" class="pen"></a>
     <a href="#" class="delete"></a>
-    </li>`
+    </li>`;
+        if (item.checked === "") {
+            num++;
+        }
     });
     list.innerHTML = str;
-    num = data.length;
     todoListNum.textContent = `${num}個待完成項目`;
+
 }
 
 
@@ -276,11 +280,9 @@ function changeTab(e) {
 const deleteAll = document.querySelector('.delete-all');
 let todoId = [];
 deleteAll.addEventListener('click', function (e) {
-    e.preventDefault();
     done = data.filter(i => i.completed_at !== null);
     done.forEach(function (i) {
         todoId.push(axios.delete(`${apiUrl}/todos/${i.id}`));
-
     })
     Promise.all(todoId)
         .then(() => getToDo())
@@ -294,7 +296,6 @@ function signOut() {
             alert(res.data.message);
         })
         .catch(error => console.log(error.response))
-
 }
 
 //畫面切換

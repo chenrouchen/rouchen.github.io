@@ -467,7 +467,7 @@ a {
     opacity: 0;
 }
 
-.container li #word {
+.container li .word {
     position: relative;
     display: block;
     left: 0%;
