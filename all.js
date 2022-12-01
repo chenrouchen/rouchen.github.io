@@ -95,6 +95,11 @@ function getToDo() {
         .then(function (res) {
             data = res.data.todos;
             background(data);
+            let num = 0;
+            data.forEach(i => {
+                i.checked === "" ? num++ : 0;
+                todoListNum.textContent = `${num}個待完成項目`;
+            })
         })
         .catch(error => console.log(error.response))
 }
@@ -134,7 +139,6 @@ list.addEventListener('click', function (e) {
     } else if (e.target.getAttribute('class') == 'delete') {
         deleteList(e);
     } else if (e.target.getAttribute('class') == 'pen') {
-
         const checkbox = e.target.parentElement.firstChild.nextSibling.children[0];
         const edit = e.target.parentElement.firstChild.nextSibling.children[1];
         let upDateStr;
@@ -158,10 +162,15 @@ list.addEventListener('click', function (e) {
     }
 })
 
-
+list.addEventListener('keyup', function (e) {
+    if (e.key == 'Enter') {
+        let listId = e.target.closest('li').dataset.id;
+        let upDateStr = e.target.value;
+        updateTodo(listId, upDateStr);
+    }
+})
 
 //渲染畫面
-
 const todoListNum = document.querySelector('.todolist-num');
 let todo = [];
 let done = [];
@@ -174,7 +183,7 @@ function readerData(data) {
             data[i].checked = '';
         }
     }
-    let num = 0;
+
     data.forEach(function (item) {
         str += `<li data-id=${item.id}>
         <label class="checkbox"   >
@@ -186,12 +195,10 @@ function readerData(data) {
         <a href="#" class="pen"></a>
     <a href="#" class="delete"></a>
     </li>`;
-        if (item.checked === "") {
-            num++;
-        }
+
     });
     list.innerHTML = str;
-    todoListNum.textContent = `${num}個待完成項目`;
+
 
 }
 
@@ -230,7 +237,6 @@ btnAdd.addEventListener('click', () => { addList() });
 userInput.addEventListener('keyup', (e) => {
     if (e.key == 'Enter') {
         addList();
-
     }
 })
 function addToDo(todo) {
