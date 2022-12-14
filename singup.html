@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" class="fs-2">Beauty Salon</a>
+        <div class="headerMenu">
+            <ul>
+                <li>
+                    <a href="color.html">髮色</a>
+                </li>
+                <li>
+                    <a href="style.html">髮型</a>
+                </li>
+                <li>
+                    <a href="designers.html">設計師</a>
+                </li>
+            </ul>
+            <div>
+                <a href="login.html" class="btn btn-outline-dark me-2">登入</a>
+                <a href="singup.html" class="btn btn-primary">註冊</a>
+            </div>
+        </div>
+    </div>
+    <div class="signUp">
+        <h2>免費註冊會員</h2>
+        <form action="">
+            <label for="name">會員名稱: </label>
+            <input type="text" name="name" id="name">
+            <label for="email">帳號:</label>
+            <input type="text" name="email" id="email">
+            <label for="password">密碼:</label>
+            <input type="password" name="password" id="password">
+            <label for="password2">再次輸入密碼:</label>
+            <input type="password" name="password2" id="password2">
+            <label for="area">地區:</label>
+            <select name="area" id="area">
+                <option value="">請選擇地區</option>
+                <option value="基隆">基隆</option>
+                <option value="臺北">臺北</option>
+                <option value="桃園">桃園</option>
+                <option value="新竹">新竹</option>
+                <option value="苗栗">苗栗</option>
+                <option value="臺中">臺中</option>
+                <option value="彰化">彰化</option>
+                <option value="南投">南投</option>
+                <option value="嘉義">嘉義</option>
+                <option value="雲林">雲林</option>
+                <option value="臺南">臺南</option>
+                <option value="高雄">高雄</option>
+                <option value="屏東">屏東</option>
+                <option value="宜蘭">宜蘭</option>
+                <option value="花蓮">花蓮</option>
+                <option value="臺東">臺東</option>
+            </select>
+            <label>是否為設計師?</label>
+            <div><input type="radio" name="designer" id="yes" value="yes"> 是
+                <input type="radio" name="designer" id="no" value="no"> 否
+            </div>
+            <input type="button" class="singUpBtn btn btn-primary" value="立即註冊">
+        </form>
+
+        <p>已加入會員?<a href="login.html">登入</a></p>
+    </div>
+
+    <div class="footer bg-dark py-4 text-light text-center">
+        <a href="index.html">Beauty Salon</a>
+        <p>2022 by AnnaChen 此網站為學習用途非營利使用</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="./js/singUp.js"></script>
+
+
+
+</body>
+
+</html>

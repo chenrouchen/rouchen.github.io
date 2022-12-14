@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Salon 美髮資訊網</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/all.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" class="fs-2">Beauty Salon</a>
+        <div class="headerMenu">
+            <ul>
+                <li>
+                    <a href="color.html">髮色</a>
+                </li>
+                <li>
+                    <a href="style.html">髮型</a>
+                </li>
+                <li>
+                    <a href="designers.html">設計師</a>
+                </li>
+            </ul>
+            <div>
+                <a href="login.html" class="btn btn-outline-dark me-2">登入</a>
+                <a href="singup.html" class="btn btn-primary">註冊</a>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <svg width="411" height="428" viewBox="0 0 411 428" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class=" bottom-0 start-0" style="z-index:2;">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M159.223 33.3546C228.18 16.6418 314.409 -25.8907 366.574 22.204C420.41 71.8388 370.83 163.385 379.167 236.134C385.208 288.849 418.949 336.579 408.562 388.613C397.441 444.321 361.267 490.037 320.568 529.669C273.873 575.141 224.398 630.768 159.223 631.419C93.9444 632.071 50.6278 567.915 -4.48062 532.917C-64.6627 494.697 -148.061 481.857 -178.094 417.199C-208.805 351.08 -195.273 266.851 -156.837 204.904C-121.429 147.839 -45.0594 139.701 13.9638 107.665C62.9636 81.0693 105.04 46.4869 159.223 33.3546Z"
+                fill="#C8DDDA" />
+        </svg>
+
+        <svg width="711" height="235" viewBox="0 0 711 235" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class=" bottom-0 start-0" style="z-index:1;">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M364.501 2.16163C416.422 9.52902 451.62 53.6385 499.115 75.872C563.375 105.954 654.416 94.2955 691.079 155.041C727.573 215.507 707.755 300.416 671.061 360.761C637.273 416.327 556.45 415.083 507.159 457.506C450.258 506.479 438.452 611.668 364.501 624.605C292.302 637.235 239.635 557.714 180.3 514.684C120.899 471.606 46.4118 441.427 18.3975 373.609C-10.4637 303.74 -4.64553 219.501 30.7807 152.721C63.8095 90.4605 134.697 62.2623 198.94 33.2786C251.409 9.60692 307.51 -5.92511 364.501 2.16163Z"
+                fill="#8C9293" />
+
+        </svg>
+        <svg width="404" height="468" viewBox="0 0 404 468" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class=" top-0 end-0">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M354.223 -130.645C423.18 -147.358 509.409 -189.891 561.574 -141.796C615.41 -92.1612 565.83 -0.61541 574.167 72.1339C580.208 124.85 613.949 172.579 603.562 224.613C592.441 280.321 556.267 326.037 515.568 365.669C468.873 411.141 419.398 466.768 354.223 467.419C288.944 468.071 245.628 403.915 190.519 368.917C130.337 330.697 46.9385 317.857 16.906 253.199C-13.8049 187.08 -0.273373 102.851 38.1633 40.9036C73.5705 -16.1611 149.941 -24.2987 208.964 -56.3349C257.964 -82.9307 300.04 -117.513 354.223 -130.645Z"
+                fill="#C8DDDA" />
+        </svg>
+
+        <div class="search">
+            <p class="searchTitle">尋找你命中注定的那位美髮師</p>
+            <div class="position-relative">
+                <input type="text" placeholder="輸入您想尋找的髮型或設計師" id="search">
+                <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search " viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg></a>
+
+            </div>
+        </div>
+        <div class="bannerDesigner">
+            <div class="bannerImg pointer">
+                <img src="https://s3-alpha-sig.figma.com/img/ce7b/8ef8/e6285c1f27652e572fb1e7e23d1a5d45?Expires=1670803200&Signature=g8vj~VAUJu4Eb~Fxv8aApOiIkc1oQxhUEA9znJxRL3WBqrce1pd-ZIv~4Pl-qYmh3TAWkBi3cZk75-rTbptxaHh9RdgyP6oGlk-rE0j-Y59bPnnt33SMlPNl~yZRc5URaFhFRht1rsfVPBId4z3eSLqvhEn31eFdtpKoPKG-j9HgQC6LDOmV9Iv2JbfFnVoOCiqeKmCfNaoMtT3UbNCV951fmUlzeiFoOA8FYjErh0PxyGWFzjU6WlEKaU-i9eo1psx26fHRLnmKD05ZxvfMTLChrOD~2NyY~E-sIVhHGQmHDZ23b~R2gxASmuOy~4fGg5oZHxxmjGlkrxxNrj8qYA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                    alt="" class="img-fluid rounded">
+                <div class="top rounded-end">Top 1</div>
+                <p class="designerName">Sherry Lin</p>
+            </div>
+            <div class="bannerImg pointer">
+                <img src="https://s3-alpha-sig.figma.com/img/78c4/0ecf/b7d01370e0263b23ef1de54dcc91b074?Expires=1670803200&Signature=cENSmsHF6u-~U5uSU27bj-XFAcEN~mte4h-r-odqBW~W501pv2TBhmkpGwzE6~3~XxmB40DA0FJ-HECCMltpH5ROZMkMSX9OCO~jBEIt9x5yIApS2~hMHVp5D0wp519CMOijzNUC81bsG~8bnBFuInRIJoTtpeWEoaL8mgOPhpbWcXI49w3VOG04hFEqQizh6fo--UvZpV6TUx-tPSKJFDsHs1x31tVsIzyaenga8SrtSLjb07DY1gSGG8HKAwPHYrjgYm9-OJ25nQx9KkBUq~jKsziJ2re3MvVuuKq2PsfC1trpajheYHXb7APS1G6nw3kYQczqJuKjeyDxTq0-rA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                    alt="" class="img-fluid rounded">
+                <div class="top rounded-end">Top 2</div>
+                <p class="designerName ">Christine Chen</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="popularity">
+            <h2>2022年流行趨勢</h2>
+            <div>
+                <ul class="popularityRender row row-cols-1 row-cols-lg-4 g-3">
+                    <li class="col">
+                        <div class="popularityImg">
+                            <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                class="rounded" alt="...">
+                            <div class="title">
+                                <div><a href="#">#漂髮染髮</a><a href="#">#造型挑染</a><a href="#">#長髮</a></div>
+                                <p class="fw-bold">仙氣滿滿~灰紫色</p>
+                                <p> by <span> Christine/台北</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <div class="popularityImg">
+                            <img src="https://images.unsplash.com/photo-1505033575518-a36ea2ef75ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80"
+                                class="rounded" alt="...">
+                            <div class="title">
+                                <div><a href="#">#造型挑染</a></div>
+                                <p class="fw-bold">秋冬漸層染</p>
+                                <p> by <span> Sherry/台北</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <div class="popularityImg">
+                            <img src="https://images.unsplash.com/photo-1605980625458-21e4d9c29c4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                class=" rounded" alt="...">
+                            <div class="title">
+                                <div><a href="#">#中長髮</a></div>
+                                <p class="fw-bold">水波紋燙髮</p>
+                                <p> by <span> Tim/高雄</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <div class="popularityImg">
+                            <img src="https://images.unsplash.com/photo-1572793829631-d27cc94204f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                class="rounded" alt="...">
+                            <div class="title">
+                                <div><a href="#">#漂髮染髮</a><a href="#">#造型挑染</a><a href="#">#極短髮</a></div>
+                                <p class="fw-bold">帥女孩</p>
+                                <p> by <span> Amy/台中</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <div class="popularityImg">
+                            <img src="https://images.unsplash.com/photo-1601487152429-8aff1d177aba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                class="rounded" alt="...">
+                            <div class="title">
+                                <div><a href="#">#長髮</a></div>
+                                <p class="fw-bold">波浪燙</p>
+                                <p> by <span> Tim/高雄</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <div class="popularityImg ">
+                            <img src="https://images.unsplash.com/photo-1589404685613-5287d1b221cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                class="rounded" alt="...">
+                            <div class="title ">
+                                <div><a href="#">#漂髮染髮</a><a href="#">#造型挑染</a><a href="#">#長髮</a></div>
+                                <p class="fw-bold">藍色漸層染</p>
+                                <p> by <span> Sherry/台北</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <div class="popularityImg ">
+                            <img src="https://images.unsplash.com/photo-1549236177-f9b0031756eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80"
+                                class="rounded" alt="...">
+                            <div class="title">
+                                <div><a href="#">#一般染髮</a><a href="#">#長髮</a></div>
+                                <p class="fw-bold">最美新娘造型</p>
+                                <p> by <span> Christine/台北</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <div class="popularityImg ">
+                            <img src="https://images.unsplash.com/photo-1599319974542-8421bd46ae67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=629&q=80"
+                                class="rounded" alt="...">
+                            <div class="title">
+                                <div><a href="#">#漂髮染髮</a><a href="#">#造型挑染</a><a href="#">#短髮</a></div>
+                                <p class="fw-bold">可愛芭比粉</p>
+                                <p> by <span> Christine/台北</span></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a class="popularityBtn btn btn-primary" href="style.html">↗查看更多</a>
+        </div>
+
+
+        <div class="recommend">
+            <svg width="411" height="328" viewBox="0 0 411 428" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="position-absolute bottom-0 start-0" style="z-index:-2;">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M159.223 33.3546C228.18 16.6418 314.409 -25.8907 366.574 22.204C420.41 71.8388 370.83 163.385 379.167 236.134C385.208 288.849 418.949 336.579 408.562 388.613C397.441 444.321 361.267 490.037 320.568 529.669C273.873 575.141 224.398 630.768 159.223 631.419C93.9444 632.071 50.6278 567.915 -4.48062 532.917C-64.6627 494.697 -148.061 481.857 -178.094 417.199C-208.805 351.08 -195.273 266.851 -156.837 204.904C-121.429 147.839 -45.0594 139.701 13.9638 107.665C62.9636 81.0693 105.04 46.4869 159.223 33.3546Z"
+                    fill="#C8DDDA" />
+            </svg>
+            <svg width="511" height="235" viewBox="0 0 711 235" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="position-absolute bottom-0 start-50" style="z-index:-1;">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M364.501 2.16163C416.422 9.52902 451.62 53.6385 499.115 75.872C563.375 105.954 654.416 94.2955 691.079 155.041C727.573 215.507 707.755 300.416 671.061 360.761C637.273 416.327 556.45 415.083 507.159 457.506C450.258 506.479 438.452 611.668 364.501 624.605C292.302 637.235 239.635 557.714 180.3 514.684C120.899 471.606 46.4118 441.427 18.3975 373.609C-10.4637 303.74 -4.64553 219.501 30.7807 152.721C63.8095 90.4605 134.697 62.2623 198.94 33.2786C251.409 9.60692 307.51 -5.92511 364.501 2.16163Z"
+                    fill="#8C9293" />
+            </svg>
+            <svg width="406" height="468" viewBox="0 0 406 468" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="position-absolute top-0 end-0">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M354.223 -130.645C423.18 -147.358 509.409 -189.891 561.574 -141.796C615.41 -92.1612 565.83 -0.61541 574.167 72.1339C580.208 124.85 613.949 172.579 603.562 224.613C592.441 280.321 556.267 326.037 515.568 365.669C468.873 411.141 419.398 466.768 354.223 467.419C288.944 468.071 245.628 403.915 190.519 368.917C130.337 330.697 46.9385 317.857 16.906 253.199C-13.8049 187.08 -0.273373 102.851 38.1633 40.9036C73.5705 -16.1611 149.941 -24.2987 208.964 -56.3349C257.964 -82.9307 300.04 -117.513 354.223 -130.645Z"
+                    fill="#C8DDDA" />
+            </svg>
+            <h2>為您推薦</h2>
+            <div>
+                <ul class="recommendRender row row-cols-1 row-cols-lg-4 g-3">
+                    <li class="col">
+                        <div class="card pointer">
+                            <div class="card-img-top">
+                                <img src="https://images.unsplash.com/photo-1555894855-3a55cd1e4339?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                    alt="...">
+                            </div>
+                            <div class="card-body">
+                                <div class="designerImg">
+                                    <img src="https://images.unsplash.com/photo-1586907835000-f692bbd4c9e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=361&q=80"
+                                        alt="">
+                                </div>
+                                <div class="card-text">
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </div>
+                                    <a href="designer.html">Amy</a>
+                                    <p>xx美髮店/台北</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <div class="card pointer">
+                            <div class="card-img-top">
+                                <img src="https://images.unsplash.com/photo-1519421692594-d7a3f3e3fe5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                    alt="...">
+                            </div>
+                            <div class="card-body">
+                                <div class="designerImg">
+                                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+                                <div class="card-text ">
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </div>
+                                    <a href="designer.html">Anna</a>
+                                    <p>xx美髮店/新竹</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <div class="card pointer">
+                            <div class="card-img-top">
+                                <img src="https://images.unsplash.com/photo-1554519515-242161756769?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                    alt="...">
+                            </div>
+                            <div class="card-body">
+                                <div class="designerImg">
+                                    <img src="https://images.unsplash.com/photo-1577880216142-8549e9488dad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                        alt="">
+                                </div>
+                                <div class="card-text ">
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </div>
+                                    <a href="designer.html">John</a>
+                                    <p>xx美髮店/台北</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col">
+                        <div class="card pointer">
+                            <div class="card-img-top">
+                                <img src="https://images.unsplash.com/photo-1605980766335-d3a41c7332a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                    alt="...">
+                            </div>
+                            <div class="card-body">
+                                <div class="designerImg">
+                                    <img src="https://s3-alpha-sig.figma.com/img/3b53/cd9b/617005242c4f85d66624bb4b7f3f75ba?Expires=1670803200&Signature=MJg3TN0-2v-bPMScclKZnWpA5JEQW946r1QIE0ngSwK-j0764Trc-D2wn4cez~v~O843vJf-2zY~yrFJ-lkb83Pgw5-o9sL0wYKvttlfDL26psVLPeaknEQlQ5E-XMKsRPBoFuQ68G~PpmEhI2UIdUaId0EsgVy-5PS-O0XK6cwOBjBywGmSh04kjL30ODj5kM-voXvU~nsfaa3I~IUdmp2FqNgBg9P06sN3VJmz1gkuht6gd6nA9x~d~R0mrzNIDiskJYY9IxnqCKmHO8ByhwtcAMG6fhA~aqqsmGRavtJ7Azn9-89uPWLNzZqilfVCaIVWiOILs5b4m2uMEZ8CuA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                        alt="">
+                                </div>
+                                <div class="card-text ">
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </div>
+                                    <a href="designer.html">Tommy</a>
+                                    <p>xx美髮店/台北</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+            <a class="popularityBtn btn btn-primary" href="designers.html">↗查看更多</a>
+        </div>
+
+        <div class="comment">
+            <h2>最新評價</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="render">
+                    <div class="swiper-slide">
+                        <div class="commentCard">
+                            <div class="card-body mb-3">
+                                <div class="designerImg">
+                                    <img src="
+                                    https://s3-alpha-sig.figma.com/img/3bf7/4fbc/41c38e8b8f27fe2b6f72166be7957fb6?Expires=1670803200&Signature=B449Hex4tHVV1T-L8vMcoPZkYJ9yjfNSYiZ8xc-iMtMkVlqkiyT-s5Tqh2q0OPQcWo9K-U2Q0TBn~dVjSUEmPtrUj5NzHP78Tyq3iCXp7TBH5QivrBG-FLS0Pcc7DmwDiUmmfYdyVH7~nb-uKrcEFI6NiVGLJWsWzC29YLBjWciKQw04O9Dmxx0EWAA2NKtYYRVKY26yyoqDW4j6Z9S7iJePtbHWGyBonV9k4t2xkFfSkJ9idtyiDh640lpbCd9dPo5XehHQEjzfFRHyWPR-PZqA7-YbP53JDtiraj2vbLEtSsFPIv3wAPtUP0sX3O~TQQRtAtJKO6zj1VqOz~-Lcg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                        alt="">
+                                </div>
+                                <div class="card-text">
+                                    <a href="designer.html">Anna</a>
+                                    <p>xx美髮店/台北</p>
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="commentImg">
+                                    <img src="https://images.unsplash.com/photo-1517841416045-94ed85a4e7bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                        alt="...">
+                                </div>
+
+                                <div class="user">
+                                    <div class="userImg">
+                                        <img src="https://s3-alpha-sig.figma.com/img/82b7/e721/f00201633db568368bdda2929682e63f?Expires=1670803200&Signature=UiwxFs0aexpnL13azQo1OqqzZCE6~UTIQ5Dh~OEeywSd4E~iC64FkgyjjzGt0V~7MSE7Nx8fT5Ax8g0FwM9ETtYc~tVmDmIS6ipIHZROogLluO75wKrvTvMtgDZPpR~Ui5QRaa3I-nNVuSxic9ZCS3dvrhPElYzoBwCkZYEK-LaTNqTcpkUax2B4eKsdRgej2~p1S5rQCimoELSOPrmbBIcqZxDKGEDe2TRBB6Ws3lYe6n6qwiOHU3hKnvUaaHwMQMVsSeIB1jto3B8u3ct0~Vet8sCxleYSPsvuQn63nmaCoR3GxTsfeYoiCW8uPypWeRrTV9IjRS4POd6Qx7uVvg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                            alt="">
+                                    </div>
+                                    <p class="userName">欣欣</p>
+                                </div>
+                                <p class="userText">新髮型好喜歡~~~~</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="commentCard">
+                            <div class="card-body mb-3">
+                                <div class="designerImg">
+                                    <img src="
+                                    https://images.unsplash.com/photo-1586907835000-f692bbd4c9e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=361&q=80"
+                                        alt="">
+                                </div>
+                                <div class="card-text">
+                                    <a href="designer.html">Amy</a>
+                                    <p>xx美髮店/台北</p>
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="commentImg">
+                                    <img src="https://s3-alpha-sig.figma.com/img/6482/9185/57dbb9aba980aa5acde5b07752ef893b?Expires=1670803200&Signature=ALk9u4LyeXQYsZp3160K3W6jYgw0aJcfZP4ibsm-jycG6RVQS~rhiRxpWEscRFhEarrksxXkpM9WyeAkL0nCUzYFvvEV1ZeIOv4DOULUbOmNnXQkwyRCO7O1Cofw7iFJlbcXqlPuYSlB8Mooz51eBwALPizZEouKRka~sIvct~AjGEWUAcZJNayuabAgT~~OFmBzcN45jRdV4uqXsDFblf-ia6UQZnUynEUWrB9pUsIvQfvq87nAuA5OuBfkf35~Uqobv8rT2e8oht0KB0pTq9QHjWya4ERDiRNwgNKgnzhXdYmGCY3HbscHiSjF-YxWKzhIbV7bL2kHX2UUSVZ~Rg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                        alt="...">
+                                </div>
+                                <div class="user">
+                                    <div class="userImg">
+                                        <img src="https://s3-alpha-sig.figma.com/img/4ba3/3dad/1be78d860c4e1d80716ba69d9ddae88c?Expires=1670803200&Signature=RAkwIp~RA8osCzTcTYmyQgE9aQT5v4ss-i9dLidT6VbLf35AyJ8VlUGNvSGJIwpkf5KzOrOrNYF6poctTDgAI0Yzl70TsJvj2zhe5c-jsniDPkIiDj~wZbaeZnVnBcVIVWOKvbAY63FXPGJ04r7ntAhB2ooRjSPH1fXJ72dBZ2DcSZ5OmI8ccrZxOvb16c8aJuUE-MZaJ99ZawlNxfG0NyEMKn8KzafOJhwmiPn3Tk-eQp8ilfNQOEtyRUa3D-gAMOlT2Tpf4~raKUmbfvIWUlaoG5cn8vIrxcctWdY0TnCSeGq1zWNYWle0uvgdenz~3u3EocEgStnnjdC1w6SGQQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                            alt="">
+                                    </div>
+                                    <p class="userName">Angle</p>
+                                </div>
+                                <p class="userText">新髮型好喜歡~~~~</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="commentCard">
+                            <div class="card-body mb-3">
+                                <div class="designerImg">
+                                    <img src="
+                                https://s3-alpha-sig.figma.com/img/de0e/fe15/f05ec953adb1d7c65f97144c91a7538e?Expires=1672012800&Signature=Rj4t~6VPpa8Q8J5~XBL-sTHKxNHkZ1eQhn6DjOwkXU4iA08areehMgNcsWcKlJn6UdQ~KZ9TzSW0FL6kVneUvFbGzRRBj~WRbPha4LwqDFSesFbQ3tI2vrKmcWYC~NFrvzzJokkz59fXf94iOP0pG9ZqegdK3JPrNqVaht9rvmKhCGOGm3Q8aBGJydHmzPQNyC8v~sFLqk-6spel5XHAxn5kezjeYhWpH9HMXYR5b0a-BZC2a5zWlnguUB8SV6~8izyYzXkRjRoRKOl8oDMNr96K9JMGiww5nNn9g~qhJIBd0-ZcwwgWkzoN-K4etJdXdYYb601noSf~qjmWhxIJvA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                        alt="">
+                                </div>
+                                <div class="card-text">
+                                    <a href="designer.html">Tim</a>
+                                    <p>xx美髮店/台北</p>
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="commentImg">
+                                    <img src="https://s3-alpha-sig.figma.com/img/8fc5/1a5e/e77598bc377980fbc33718b816ffd29d?Expires=1672012800&Signature=Zp6xE5aohpwMRcCQ10RiX2xzBEF-cTHrx-dKKMR4vPYQkiaTI1dObchu4JnoQUMYofwnAgbCqCoskPC9sR6kSIhv8~YuQb8-b3Y44k0Cz2M6zgeMVKjnINCK6HAnzY-zpMCPNwqY9d5RkOpFtNF4cFL3Sz3TS9z1TT~8GesRQG0Zv8a5yzMQThTeMUZUTfKRo3enTv15G1ZkULEtIzOgtQgB8enSaBlv7x58EmCrlMoplRD2rI1zw79TvKM3t0bYIctU7n9unCxvTOJ5azDBkX3ekAsnfasF2RPc8lRWynBVSTFD6lPydnkg0o~N2cQPHOsg3~54m~6DaXOc5EW7rA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                        alt="...">
+                                </div>
+                                <div class="user">
+                                    <div class="userImg">
+                                        <img src="https://s3-alpha-sig.figma.com/img/8fc5/1a5e/e77598bc377980fbc33718b816ffd29d?Expires=1672012800&Signature=Zp6xE5aohpwMRcCQ10RiX2xzBEF-cTHrx-dKKMR4vPYQkiaTI1dObchu4JnoQUMYofwnAgbCqCoskPC9sR6kSIhv8~YuQb8-b3Y44k0Cz2M6zgeMVKjnINCK6HAnzY-zpMCPNwqY9d5RkOpFtNF4cFL3Sz3TS9z1TT~8GesRQG0Zv8a5yzMQThTeMUZUTfKRo3enTv15G1ZkULEtIzOgtQgB8enSaBlv7x58EmCrlMoplRD2rI1zw79TvKM3t0bYIctU7n9unCxvTOJ5azDBkX3ekAsnfasF2RPc8lRWynBVSTFD6lPydnkg0o~N2cQPHOsg3~54m~6DaXOc5EW7rA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                            alt="">
+                                    </div>
+                                    <p class="userName">小玉</p>
+                                </div>
+                                <p class="userText">推推!!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="commentCard">
+                            <div class="card-body mb-3">
+                                <div class="designerImg">
+                                    <img src="
+                                https://s3-alpha-sig.figma.com/img/3bf7/4fbc/41c38e8b8f27fe2b6f72166be7957fb6?Expires=1670803200&Signature=B449Hex4tHVV1T-L8vMcoPZkYJ9yjfNSYiZ8xc-iMtMkVlqkiyT-s5Tqh2q0OPQcWo9K-U2Q0TBn~dVjSUEmPtrUj5NzHP78Tyq3iCXp7TBH5QivrBG-FLS0Pcc7DmwDiUmmfYdyVH7~nb-uKrcEFI6NiVGLJWsWzC29YLBjWciKQw04O9Dmxx0EWAA2NKtYYRVKY26yyoqDW4j6Z9S7iJePtbHWGyBonV9k4t2xkFfSkJ9idtyiDh640lpbCd9dPo5XehHQEjzfFRHyWPR-PZqA7-YbP53JDtiraj2vbLEtSsFPIv3wAPtUP0sX3O~TQQRtAtJKO6zj1VqOz~-Lcg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                        alt="">
+                                </div>
+                                <div class="card-text">
+                                    <a href="designer.html">Anna</a>
+                                    <p>xx美髮店/台北</p>
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="commentImg">
+                                    <img src="https://images.unsplash.com/photo-1517841416045-94ed85a4e7bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                        alt="...">
+                                </div>
+                                <div class="user">
+                                    <div class="userImg">
+                                        <img src="https://s3-alpha-sig.figma.com/img/82b7/e721/f00201633db568368bdda2929682e63f?Expires=1670803200&Signature=UiwxFs0aexpnL13azQo1OqqzZCE6~UTIQ5Dh~OEeywSd4E~iC64FkgyjjzGt0V~7MSE7Nx8fT5Ax8g0FwM9ETtYc~tVmDmIS6ipIHZROogLluO75wKrvTvMtgDZPpR~Ui5QRaa3I-nNVuSxic9ZCS3dvrhPElYzoBwCkZYEK-LaTNqTcpkUax2B4eKsdRgej2~p1S5rQCimoELSOPrmbBIcqZxDKGEDe2TRBB6Ws3lYe6n6qwiOHU3hKnvUaaHwMQMVsSeIB1jto3B8u3ct0~Vet8sCxleYSPsvuQn63nmaCoR3GxTsfeYoiCW8uPypWeRrTV9IjRS4POd6Qx7uVvg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                            alt="">
+                                    </div>
+                                    <p class="userName">欣欣</p>
+                                </div>
+                                <p class="userText">新髮型好喜歡~~~~</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="commentCard">
+                            <div class="card-body mb-3">
+                                <div class="designerImg">
+                                    <img src="
+                                https://s3-alpha-sig.figma.com/img/3bf7/4fbc/41c38e8b8f27fe2b6f72166be7957fb6?Expires=1670803200&Signature=B449Hex4tHVV1T-L8vMcoPZkYJ9yjfNSYiZ8xc-iMtMkVlqkiyT-s5Tqh2q0OPQcWo9K-U2Q0TBn~dVjSUEmPtrUj5NzHP78Tyq3iCXp7TBH5QivrBG-FLS0Pcc7DmwDiUmmfYdyVH7~nb-uKrcEFI6NiVGLJWsWzC29YLBjWciKQw04O9Dmxx0EWAA2NKtYYRVKY26yyoqDW4j6Z9S7iJePtbHWGyBonV9k4t2xkFfSkJ9idtyiDh640lpbCd9dPo5XehHQEjzfFRHyWPR-PZqA7-YbP53JDtiraj2vbLEtSsFPIv3wAPtUP0sX3O~TQQRtAtJKO6zj1VqOz~-Lcg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                        alt="">
+                                </div>
+                                <div class="card-text">
+                                    <a href="designer.html">Anna</a>
+                                    <p>xx美髮店/台北</p>
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="commentImg">
+                                    <img src="https://images.unsplash.com/photo-1517841416045-94ed85a4e7bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                        alt="...">
+                                </div>
+                                <div class="user">
+                                    <div class="userImg">
+                                        <img src="https://s3-alpha-sig.figma.com/img/82b7/e721/f00201633db568368bdda2929682e63f?Expires=1670803200&Signature=UiwxFs0aexpnL13azQo1OqqzZCE6~UTIQ5Dh~OEeywSd4E~iC64FkgyjjzGt0V~7MSE7Nx8fT5Ax8g0FwM9ETtYc~tVmDmIS6ipIHZROogLluO75wKrvTvMtgDZPpR~Ui5QRaa3I-nNVuSxic9ZCS3dvrhPElYzoBwCkZYEK-LaTNqTcpkUax2B4eKsdRgej2~p1S5rQCimoELSOPrmbBIcqZxDKGEDe2TRBB6Ws3lYe6n6qwiOHU3hKnvUaaHwMQMVsSeIB1jto3B8u3ct0~Vet8sCxleYSPsvuQn63nmaCoR3GxTsfeYoiCW8uPypWeRrTV9IjRS4POd6Qx7uVvg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                            alt="">
+                                    </div>
+                                    <p class="userName">欣欣</p>
+                                </div>
+                                <p class="userText">新髮型好喜歡~~~~</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="commentCard">
+                            <div class="card-body mb-3">
+                                <div class="designerImg">
+                                    <img src="
+                                https://s3-alpha-sig.figma.com/img/3bf7/4fbc/41c38e8b8f27fe2b6f72166be7957fb6?Expires=1670803200&Signature=B449Hex4tHVV1T-L8vMcoPZkYJ9yjfNSYiZ8xc-iMtMkVlqkiyT-s5Tqh2q0OPQcWo9K-U2Q0TBn~dVjSUEmPtrUj5NzHP78Tyq3iCXp7TBH5QivrBG-FLS0Pcc7DmwDiUmmfYdyVH7~nb-uKrcEFI6NiVGLJWsWzC29YLBjWciKQw04O9Dmxx0EWAA2NKtYYRVKY26yyoqDW4j6Z9S7iJePtbHWGyBonV9k4t2xkFfSkJ9idtyiDh640lpbCd9dPo5XehHQEjzfFRHyWPR-PZqA7-YbP53JDtiraj2vbLEtSsFPIv3wAPtUP0sX3O~TQQRtAtJKO6zj1VqOz~-Lcg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                        alt="">
+                                </div>
+                                <div class="card-text">
+                                    <a href="designer.html">Anna</a>
+                                    <p>xx美髮店/台北</p>
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="commentImg">
+                                    <img src="https://images.unsplash.com/photo-1517841416045-94ed85a4e7bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                        alt="...">
+                                </div>
+                                <div class="user">
+                                    <div class="userImg">
+                                        <img src="https://s3-alpha-sig.figma.com/img/82b7/e721/f00201633db568368bdda2929682e63f?Expires=1670803200&Signature=UiwxFs0aexpnL13azQo1OqqzZCE6~UTIQ5Dh~OEeywSd4E~iC64FkgyjjzGt0V~7MSE7Nx8fT5Ax8g0FwM9ETtYc~tVmDmIS6ipIHZROogLluO75wKrvTvMtgDZPpR~Ui5QRaa3I-nNVuSxic9ZCS3dvrhPElYzoBwCkZYEK-LaTNqTcpkUax2B4eKsdRgej2~p1S5rQCimoELSOPrmbBIcqZxDKGEDe2TRBB6Ws3lYe6n6qwiOHU3hKnvUaaHwMQMVsSeIB1jto3B8u3ct0~Vet8sCxleYSPsvuQn63nmaCoR3GxTsfeYoiCW8uPypWeRrTV9IjRS4POd6Qx7uVvg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                            alt="">
+                                    </div>
+                                    <p class="userName">欣欣</p>
+                                </div>
+                                <p class="userText">新髮型好喜歡~~~~</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="commentCard">
+                            <div class="card-body mb-3">
+                                <div class="designerImg">
+                                    <img src="
+                                https://s3-alpha-sig.figma.com/img/3bf7/4fbc/41c38e8b8f27fe2b6f72166be7957fb6?Expires=1670803200&Signature=B449Hex4tHVV1T-L8vMcoPZkYJ9yjfNSYiZ8xc-iMtMkVlqkiyT-s5Tqh2q0OPQcWo9K-U2Q0TBn~dVjSUEmPtrUj5NzHP78Tyq3iCXp7TBH5QivrBG-FLS0Pcc7DmwDiUmmfYdyVH7~nb-uKrcEFI6NiVGLJWsWzC29YLBjWciKQw04O9Dmxx0EWAA2NKtYYRVKY26yyoqDW4j6Z9S7iJePtbHWGyBonV9k4t2xkFfSkJ9idtyiDh640lpbCd9dPo5XehHQEjzfFRHyWPR-PZqA7-YbP53JDtiraj2vbLEtSsFPIv3wAPtUP0sX3O~TQQRtAtJKO6zj1VqOz~-Lcg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                        alt="">
+                                </div>
+                                <div class="card-text">
+                                    <a href="designer.html">Anna</a>
+                                    <p>xx美髮店/台北</p>
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="commentImg">
+                                    <img src="https://images.unsplash.com/photo-1517841416045-94ed85a4e7bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                        alt="...">
+                                </div>
+                                <div class="user">
+                                    <div class="userImg">
+                                        <img src="https://s3-alpha-sig.figma.com/img/82b7/e721/f00201633db568368bdda2929682e63f?Expires=1670803200&Signature=UiwxFs0aexpnL13azQo1OqqzZCE6~UTIQ5Dh~OEeywSd4E~iC64FkgyjjzGt0V~7MSE7Nx8fT5Ax8g0FwM9ETtYc~tVmDmIS6ipIHZROogLluO75wKrvTvMtgDZPpR~Ui5QRaa3I-nNVuSxic9ZCS3dvrhPElYzoBwCkZYEK-LaTNqTcpkUax2B4eKsdRgej2~p1S5rQCimoELSOPrmbBIcqZxDKGEDe2TRBB6Ws3lYe6n6qwiOHU3hKnvUaaHwMQMVsSeIB1jto3B8u3ct0~Vet8sCxleYSPsvuQn63nmaCoR3GxTsfeYoiCW8uPypWeRrTV9IjRS4POd6Qx7uVvg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                            alt="">
+                                    </div>
+                                    <p class="userName">欣欣</p>
+                                </div>
+                                <p class="userText">新髮型好喜歡~~~~</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="commentCard">
+                            <div class="card-body mb-3">
+                                <div class="designerImg">
+                                    <img src="
+                                https://s3-alpha-sig.figma.com/img/3bf7/4fbc/41c38e8b8f27fe2b6f72166be7957fb6?Expires=1670803200&Signature=B449Hex4tHVV1T-L8vMcoPZkYJ9yjfNSYiZ8xc-iMtMkVlqkiyT-s5Tqh2q0OPQcWo9K-U2Q0TBn~dVjSUEmPtrUj5NzHP78Tyq3iCXp7TBH5QivrBG-FLS0Pcc7DmwDiUmmfYdyVH7~nb-uKrcEFI6NiVGLJWsWzC29YLBjWciKQw04O9Dmxx0EWAA2NKtYYRVKY26yyoqDW4j6Z9S7iJePtbHWGyBonV9k4t2xkFfSkJ9idtyiDh640lpbCd9dPo5XehHQEjzfFRHyWPR-PZqA7-YbP53JDtiraj2vbLEtSsFPIv3wAPtUP0sX3O~TQQRtAtJKO6zj1VqOz~-Lcg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                        alt="">
+                                </div>
+                                <div class="card-text">
+                                    <a href="designer.html">Anna</a>
+                                    <p>xx美髮店/台北</p>
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="commentImg">
+                                    <img src="https://images.unsplash.com/photo-1517841416045-94ed85a4e7bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                        alt="...">
+                                </div>
+                                <div class="user">
+                                    <div class="userImg">
+                                        <img src="https://s3-alpha-sig.figma.com/img/82b7/e721/f00201633db568368bdda2929682e63f?Expires=1670803200&Signature=UiwxFs0aexpnL13azQo1OqqzZCE6~UTIQ5Dh~OEeywSd4E~iC64FkgyjjzGt0V~7MSE7Nx8fT5Ax8g0FwM9ETtYc~tVmDmIS6ipIHZROogLluO75wKrvTvMtgDZPpR~Ui5QRaa3I-nNVuSxic9ZCS3dvrhPElYzoBwCkZYEK-LaTNqTcpkUax2B4eKsdRgej2~p1S5rQCimoELSOPrmbBIcqZxDKGEDe2TRBB6Ws3lYe6n6qwiOHU3hKnvUaaHwMQMVsSeIB1jto3B8u3ct0~Vet8sCxleYSPsvuQn63nmaCoR3GxTsfeYoiCW8uPypWeRrTV9IjRS4POd6Qx7uVvg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                            alt="">
+                                    </div>
+                                    <p class="userName">欣欣</p>
+                                </div>
+                                <p class="userText">新髮型好喜歡~~~~</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="commentCard">
+                            <div class="card-body mb-3">
+                                <div class="designerImg">
+                                    <img src="
+                                https://s3-alpha-sig.figma.com/img/3bf7/4fbc/41c38e8b8f27fe2b6f72166be7957fb6?Expires=1670803200&Signature=B449Hex4tHVV1T-L8vMcoPZkYJ9yjfNSYiZ8xc-iMtMkVlqkiyT-s5Tqh2q0OPQcWo9K-U2Q0TBn~dVjSUEmPtrUj5NzHP78Tyq3iCXp7TBH5QivrBG-FLS0Pcc7DmwDiUmmfYdyVH7~nb-uKrcEFI6NiVGLJWsWzC29YLBjWciKQw04O9Dmxx0EWAA2NKtYYRVKY26yyoqDW4j6Z9S7iJePtbHWGyBonV9k4t2xkFfSkJ9idtyiDh640lpbCd9dPo5XehHQEjzfFRHyWPR-PZqA7-YbP53JDtiraj2vbLEtSsFPIv3wAPtUP0sX3O~TQQRtAtJKO6zj1VqOz~-Lcg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                        alt="">
+                                </div>
+                                <div class="card-text">
+                                    <a href="designer.html">Anna</a>
+                                    <p>xx美髮店/台北</p>
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="commentImg">
+                                    <img src="https://images.unsplash.com/photo-1517841416045-94ed85a4e7bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                        alt="...">
+                                </div>
+                                <div class="user">
+                                    <div class="userImg">
+                                        <img src="https://s3-alpha-sig.figma.com/img/82b7/e721/f00201633db568368bdda2929682e63f?Expires=1670803200&Signature=UiwxFs0aexpnL13azQo1OqqzZCE6~UTIQ5Dh~OEeywSd4E~iC64FkgyjjzGt0V~7MSE7Nx8fT5Ax8g0FwM9ETtYc~tVmDmIS6ipIHZROogLluO75wKrvTvMtgDZPpR~Ui5QRaa3I-nNVuSxic9ZCS3dvrhPElYzoBwCkZYEK-LaTNqTcpkUax2B4eKsdRgej2~p1S5rQCimoELSOPrmbBIcqZxDKGEDe2TRBB6Ws3lYe6n6qwiOHU3hKnvUaaHwMQMVsSeIB1jto3B8u3ct0~Vet8sCxleYSPsvuQn63nmaCoR3GxTsfeYoiCW8uPypWeRrTV9IjRS4POd6Qx7uVvg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                                            alt="">
+                                    </div>
+                                    <p class="userName">欣欣</p>
+                                </div>
+                                <p class="userText">新髮型好喜歡~~~~</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+            <script>
+
+            </script>
+        </div>
+
+    </div>
+
+
+    <div class="about">
+        <div class="aboutText">
+            <img src="https://images.unsplash.com/photo-1560869713-bf165a9cfac1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=326&q=80"
+                alt="" class="aboutImg">
+            <div class="p-5">
+                <h2>關於我們</h2>
+                <p><strong class="fs-3">Beauty Solan</strong> 是一個公開的美髮資訊平台，為您把關最優秀的設計師，讓您輕鬆變美不踩雷。</p>
+                <p>在這裡您可以查看到設計師作品與評價，每一則評價都是會員真實體驗，我們嚴格杜絕洗評價，讓您在這裡尋找到最滿意的美髮設計師。</p>
+                <p>加入會員收藏您喜歡的作品，也可以在設計師評論區評價留言跟大家分享心得。</p>
+                <p>我們歡迎設計師們加入設計師會員，您可以建造專屬的作品集，透過個人資訊網頁增加曝光率讓更多人看到您。</p>
+            </div>
+        </div>
+        <a class="aboutBtn btn btn-lg btn-primary" href="#">↗立即註冊</a>
+        <div class="background">
+        </div>
+    </div>
+
+    <div class="footer bg-dark py-4 text-light text-center">
+        <a href="#">Beauty Salon</a>
+        <p>2022 by AnnaChen 此網站為學習用途非營利使用</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/banner.js"></script>
+</body>
+
+</html>

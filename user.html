@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Salon 美髮資訊網</title>
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" class="fs-2">Beauty Salon</a>
+        <div class="headerMenu">
+            <ul>
+                <li>
+                    <a href="color.html">髮色</a>
+                </li>
+                <li>
+                    <a href="style.html">髮型</a>
+                </li>
+                <li>
+                    <a href="designers.html">設計師</a>
+                </li>
+            </ul>
+            <div>
+                <a aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                        fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                    </svg></a>
+
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg></a>
+                <a href="#" class="btn btn-primary">登出</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="admin">
+            <h2>會員資料</h2>
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="me-5">
+                    <div class="titleImg mb-3">
+                        <img src="https://s3-alpha-sig.figma.com/img/2603/395e/a64f76966da381612b01c2996ce6b022?Expires=1670803200&Signature=M7HAYu6uA3vJRgyrGRx-EWm-N~M9h2Dzm5S9U6w~7YbDVGkz~zRnmUQwaqk4BD47zw7mFfjlak6tEs-98ydzXgYCNtCbCKbxh2F1s-bHJf2YnnpwyRSHFosLMnL~nfcVwsIhZfkdJagMx1ikaMBuW-W74wXWkGAKantVcPpFmRQAwm9xjK4TTykTlkhmNlhnkQZmxcLbJ2xqUiF1Gv2HIJkBroeOPCfDD2VewbRW-tSl5f-YQkdvJZshDEDvx4Z2RF~Q9CKtxN9a4r5wlKkX5j20I8Stj9MTIRWNzyqDojsp3ltWawKjIkpCyJ1~vUbHftr54IYKNsUZiHLy0cDHkQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                            alt="..." id="userImg">
+                    </div>
+                    <input type="text" name="" id="img">
+                    <a href="#" id="imgBtn">更改大頭照</a>
+
+                </div>
+                <form class="ms-5">
+                    <label for="name">會員名稱: </label>
+                    <input type="text" name="name" id="name" value="小美">
+                    <label for="email">帳號:</label>
+                    <input type="text" name="email" id="email" value="abc@gmail.com" disabled>
+                    <label for="area">地區:</label>
+                    <select name="area" id="area">
+                        <option value="">請選擇地區</option>
+                        <option value="基隆">基隆</option>
+                        <option value="臺北">臺北</option>
+                        <option value="桃園">桃園</option>
+                        <option value="新竹">新竹</option>
+                        <option value="苗栗">苗栗</option>
+                        <option value="臺中">臺中</option>
+                        <option value="彰化">彰化</option>
+                        <option value="南投">南投</option>
+                        <option value="嘉義">嘉義</option>
+                        <option value="雲林">雲林</option>
+                        <option value="臺南">臺南</option>
+                        <option value="高雄">高雄</option>
+                        <option value="屏東">屏東</option>
+                        <option value="宜蘭">宜蘭</option>
+                        <option value="花蓮">花蓮</option>
+                        <option value="臺東">臺東</option>
+                    </select>
+                    <button class="btn btn-primary my-5" id="user">修改資料</button>
+                </form>
+            </div>
+        </div>
+        <div class="collect">
+            <h2>我的收藏</h2>
+            <ul class="row row-cols-1 row-cols-lg-4 g-3">
+                <li class="col">
+                    <div class="styleImg">
+                        <img src="https://images.unsplash.com/photo-1521807869405-73bb6986237e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                            class=" rounded" alt="...">
+                        <div class="title">
+                            <div><a href="#">#長髮</a></div>
+                            <p class="fw-bold">QQ羊毛捲</p>
+                            <p> by <span> Amy/台北</span></p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-heart-fill " viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                        </svg>
+                    </div>
+                </li>
+                <li class="col">
+                    <div class="styleImg">
+                        <img src="https://images.unsplash.com/photo-1592041828844-289fdc630ac0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            class="rounded" alt="...">
+                        <div class="title ">
+                            <p>慵懶感捲髮</p>
+                            <p> by <span> Amy/台北</span></p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-heart-fill " viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                        </svg>
+                    </div>
+                </li>
+                <li class="col">
+                    <div class="styleImg">
+                        <img src="https://images.unsplash.com/photo-1541577141970-eebc83ebe30e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                            class=" rounded" alt="...">
+                        <div class="title ">
+                            <p>飛機頭</p>
+                            <p> by <span> Amy/台北</span></p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-heart-fill " viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                        </svg>
+                    </div>
+                </li>
+                <li class="col">
+                    <div class="styleImg">
+                        <img src="https://images.unsplash.com/photo-1572793829631-d27cc94204f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                            class="rounded" alt="...">
+                        <div class="title">
+                            <p>帥女孩</p>
+                            <p> by <span> Amy/台北</span></p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-heart-fill " viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <div>
+            <h2>我的評價</h2>
+            <div class="d-comment">
+                <div class="commentImg">
+                    <img src="https://images.unsplash.com/photo-1517841416045-94ed85a4e7bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        alt="...">
+                </div>
+                <div>
+                    <div class="designerImg ">
+                        <img src="https://images.unsplash.com/photo-1586907835000-f692bbd4c9e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=361&q=80"
+                            alt="">
+                    </div>
+                    <p>Amy</p>
+                    <span>xx美髮店/台北</span>
+                    <div class="star">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                    </div>
+                </div>
+                <textarea name="" id="" disabled>非常棒~~</textarea>
+
+                <button class="btn btn-primary">更改評價</button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-x-lg delete" viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer bg-dark py-4 text-light text-center">
+        <a href="#">Beauty Salon</a>
+        <p>2022 by AnnaChen 此網站為學習用途非營利使用</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="./js/user.js"></script>
+</body>
+
+</html>
